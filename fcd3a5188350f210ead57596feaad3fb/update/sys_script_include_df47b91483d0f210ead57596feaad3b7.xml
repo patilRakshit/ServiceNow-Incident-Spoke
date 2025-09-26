@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1319705_servicen.IncidentPayload</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>IncidentPayload</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var IncidentPayload = Class.create();
+IncidentPayload.prototype = {
+    initialize: function() {},
+
+    createIncidentPayload: function(incident_sys_id) {
+        var incidentSysId = incident_sys_id;
+        var incidentRec = new GlideRecord('incident');
+        incidentRec.get(incidentSysId);
+        var incidentValues = {
+            correlation_id: incidentRec.getDisplayValue('number'),
+            short_description: incidentRec.getDisplayValue('short_description'),
+            description: incidentRec.getDisplayValue('description'),
+            state: incidentRec.getDisplayValue('state'),
+            caller_id: incidentRec.getDisplayValue('caller_id'),
+            business_service: incidentRec.getDisplayValue('business_service'),
+            category: incidentRec.getDisplayValue('category'),
+            impact: incidentRec.getDisplayValue('impact'),
+            urgency: incidentRec.getDisplayValue('urgency'),
+            cmdb_ci: incidentRec.getDisplayValue('cmdb_ci'),
+            assignment_group: incidentRec.getDisplayValue('assignment_group'),
+            assigned_to: incidentRec.getDisplayValue('assigned_to')
+        };
+        var contactType = incidentRec.getDisplayValue('contact_type');
+        if (contactType) {
+            incidentValues.contact_type = contactType;
+        }
+
+        var subcategory = incidentRec.getDisplayValue('subcategory');
+        if (subcategory) {
+            incidentValues.subcategory = subcategory;
+        }
+        return incidentValues;
+    },
+
+    type: 'IncidentPayload'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 06:37:15</sys_created_on>
+        <sys_id>df47b91483d0f210ead57596feaad3b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IncidentPayload</sys_name>
+        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
+        <sys_update_name>sys_script_include_df47b91483d0f210ead57596feaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 06:37:27</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>df47b91483d0f210ead57596feaad3b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 06:37:14</sys_created_on>
+        <sys_id>9577b91483d0f210ead57596feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 06:37:14</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
