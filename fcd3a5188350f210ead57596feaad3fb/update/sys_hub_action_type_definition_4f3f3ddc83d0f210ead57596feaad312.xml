@@ -14,7 +14,7 @@
         <copied_from_name>ServiceNow Update incident</copied_from_name>
         <description/>
         <flow_priority/>
-        <ih_action>false</ih_action>
+        <ih_action>true</ih_action>
         <internal_name>copy_of_servicenow_update_incident</internal_name>
         <label_cache>[{"name":"{{action.incident}}","label":"action➛incident","type":"action","ref":"","reference_display":"Incident","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.incident.number}}","label":"action➛incident➛Number","type":"action","ref":"","reference_display":"Number","base_type":"string","parent_table_name":"incident","column_name":"number","choices":null,"attributes":{}},{"name":"{{action.incident.sys_id}}","label":"action➛incident➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[86322865-8131-4535-b329-c1c8d178da9f].response_body}}","label":"step➛Validate incident exisits➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[86322865-8131-4535-b329-c1c8d178da9f].status_code}}","label":"step➛Validate incident exisits➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[daf8f6ec-e903-4b61-8585-7ef16a0b67ec].response_body}}","label":"step➛Update incident➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[daf8f6ec-e903-4b61-8585-7ef16a0b67ec].status_code}}","label":"step➛Update incident➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[436ebfb2-62e3-4fde-8219-d38a0f9c6a6c].sysid}}","label":"step➛Parse Response➛sysID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f1c1ad3b-2102-4c6a-92e1-8ea53be5ae69].response}}","label":"step➛Incident Payload➛response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"10727e87-c808-4abb-bec9-ab9358e1afd1"}}]</label_cache>
         <master_snapshot>16ef71508314f210ead57596feaad3c6</master_snapshot>
@@ -23,14 +23,14 @@
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4f3f3ddc83d0f210ead57596feaad312</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>ServiceNow Update incident</sys_name>
         <sys_overrides/>
         <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_4f3f3ddc83d0f210ead57596feaad312</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 08:07:20</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:42</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -52,10 +52,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:16</sys_created_on>
         <sys_id>373f7ddc83d0f210ead57596feaad34a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:13:00</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDf73f7ddcd3d0f210ac1049e26a853038":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf73f7ddcd3d0f210ac1049e26a853038.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f721d213-abd7-4514-b70e-83d3b71d112a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf73f7ddcd3d0f210ac1049e26a853038\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-09-29 05:37:17</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDf73f7ddcd3d0f210ac1049e26a853038":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf73f7ddcd3d0f210ac1049e26a853038.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f721d213-abd7-4514-b70e-83d3b71d112a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf73f7ddcd3d0f210ac1049e26a853038\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">3f3f7ddc83d0f210ead57596feaad339</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -513,10 +513,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:14</sys_created_on>
         <sys_id>633f3ddc83d0f210ead57596feaad38b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 08:06:56</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:16</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=633f3ddc83d0f210ead57596feaad38b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -527,15 +527,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:14</sys_created_on>
         <sys_id>2f3f3ddc83d0f210ead57596feaad3a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:14</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:16</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-&#13;
+try{&#13;
 var responseBody = JSON.parse(inputs.response);&#13;
 var result = responseBody.result[0];&#13;
 outputs.sysid = result.sys_id;&#13;
-&#13;
+}catch(ex){&#13;
+    gs.log("Error while running script in ServiceNow Update incident Action" + ex.message);&#13;
+}&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -555,18 +557,6 @@ outputs.sysid = result.sys_id;&#13;
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=633f3ddc83d0f210ead57596feaad38b"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>633f3ddc83d0f210ead57596feaad38b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:14</sys_created_on>
-        <sys_id>273f3ddc83d0f210ead57596feaad3a1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>code</field>
         <id>633f3ddc83d0f210ead57596feaad38b</id>
@@ -595,11 +585,11 @@ outputs.sysid = result.sys_id;&#13;
         <field>script</field>
         <id>633f3ddc83d0f210ead57596feaad38b</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:14</sys_created_on>
-        <sys_id>e73f3ddc83d0f210ead57596feaad3a1</sys_id>
+        <sys_created_on>2025-09-29 05:37:16</sys_created_on>
+        <sys_id>dc86855983103210ead57596feaad342</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:14</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:16</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -1337,7 +1327,7 @@ outputs.sysid = result.sys_id;&#13;
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>Script step</label>
+        <label>set output status</label>
         <order>5</order>
         <outputs/>
         <section/>
@@ -1345,10 +1335,10 @@ outputs.sysid = result.sys_id;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:15</sys_created_on>
         <sys_id>733f7ddc83d0f210ead57596feaad313</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 08:07:20</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:17</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=733f7ddc83d0f210ead57596feaad313"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1387,18 +1377,6 @@ if(inputs.statusCode == 200){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=733f7ddc83d0f210ead57596feaad313"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>733f7ddc83d0f210ead57596feaad313</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:15</sys_created_on>
-        <sys_id>333f7ddc83d0f210ead57596feaad335</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>responseBody</field>
         <id>733f7ddc83d0f210ead57596feaad313</id>
         <sys_created_by>admin</sys_created_by>
@@ -1409,18 +1387,6 @@ if(inputs.statusCode == 200){&#13;
         <sys_updated_on>2025-09-26 08:07:20</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_733f7ddc83d0f210ead57596feaad313</table>
         <value>{{step[daf8f6ec-e903-4b61-8585-7ef16a0b67ec].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>733f7ddc83d0f210ead57596feaad313</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:16</sys_created_on>
-        <sys_id>f33f7ddc83d0f210ead57596feaad335</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:16</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>statusCode</field>
@@ -1478,7 +1444,7 @@ if(inputs.statusCode == 200){&#13;
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">733f7ddc83d0f210ead57596feaad313</model>
+        <model display_value="set output status">733f7ddc83d0f210ead57596feaad313</model>
         <model_id>733f7ddc83d0f210ead57596feaad313</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_733f7ddc83d0f210ead57596feaad313</name>
@@ -1561,7 +1527,7 @@ if(inputs.statusCode == 200){&#13;
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">733f7ddc83d0f210ead57596feaad313</model>
+        <model display_value="set output status">733f7ddc83d0f210ead57596feaad313</model>
         <model_id>733f7ddc83d0f210ead57596feaad313</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_733f7ddc83d0f210ead57596feaad313</name>
@@ -1645,7 +1611,7 @@ if(inputs.statusCode == 200){&#13;
         <label>status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">733f7ddc83d0f210ead57596feaad313</model>
+        <model display_value="set output status">733f7ddc83d0f210ead57596feaad313</model>
         <model_id>733f7ddc83d0f210ead57596feaad313</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_733f7ddc83d0f210ead57596feaad313</name>
@@ -1730,10 +1696,10 @@ if(inputs.statusCode == 200){&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:15</sys_created_on>
         <sys_id>af3f3ddc83d0f210ead57596feaad3a4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:12:59</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:50:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=af3f3ddc83d0f210ead57596feaad3a4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1744,13 +1710,17 @@ if(inputs.statusCode == 200){&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:15</sys_created_on>
         <sys_id>ab3f3ddc83d0f210ead57596feaad3c2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:12:59</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:50:11</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-var incidentJson = new x_1319705_servicen.IncidentPayload();&#13;
+try{&#13;
+var incidentJson = new x_1319705_servicen.IncidentPayload2();&#13;
 var res = incidentJson.createIncidentPayload(inputs.incident_sysID)&#13;
 outputs.response = JSON.stringify(res);&#13;
+}catch(ex){&#13;
+    gs.log("Error while running script in ServiceNow Update incident Action" + ex.message);&#13;
+}&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1771,18 +1741,6 @@ outputs.response = JSON.stringify(res);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=af3f3ddc83d0f210ead57596feaad3a4"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>af3f3ddc83d0f210ead57596feaad3a4</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:15</sys_created_on>
-        <sys_id>a33f3ddc83d0f210ead57596feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>incident_sysID</field>
         <id>af3f3ddc83d0f210ead57596feaad3a4</id>
         <sys_created_by>admin</sys_created_by>
@@ -1798,11 +1756,11 @@ outputs.response = JSON.stringify(res);&#13;
         <field>script</field>
         <id>af3f3ddc83d0f210ead57596feaad3a4</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:11:15</sys_created_on>
-        <sys_id>673f3ddc83d0f210ead57596feaad3c2</sys_id>
+        <sys_created_on>2025-09-29 05:37:16</sys_created_on>
+        <sys_id>5086855983103210ead57596feaad351</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:11:15</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:16</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -2153,14 +2111,14 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:11:16</sys_created_on>
         <sys_id>333f7ddc83d0f210ead57596feaad33f</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 08:07:20</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2187,7 +2145,7 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bb3f7ddc83d0f210ead57596feaad338</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2195,7 +2153,7 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 08:07:20</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:39</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2374,17 +2332,17 @@ outputs.response = JSON.stringify(res);&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="ServiceNow Update incident">4f3f3ddc83d0f210ead57596feaad312</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"07eff1508314f210ead57596feaad343","name":"plan","plan_signature":null}}</plan>
-        <snapshot>faefb1508314f210ead57596feaad3b9</snapshot>
+        <snapshot>6c310a1183543210ead57596feaad322</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07eff1508314f210ead57596feaad343</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:13</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:43</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2449,10 +2407,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:12</sys_created_on>
         <sys_id>f2efb1508314f210ead57596feaad3b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:12</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-09-29 05:37:29</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">36efb1508314f210ead57596feaad3a9</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_16ef71508314f210ead57596feaad3c6^id=16ef71508314f210ead57596feaad3c6"/>
@@ -2474,10 +2432,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:09</sys_created_on>
         <sys_id>12ef71508314f210ead57596feaad3d5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:27</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=12ef71508314f210ead57596feaad3d5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2544,10 +2502,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>5aefb1508314f210ead57596feaad303</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <value>6bb0038c8354b210ead57596feaad3e2</value>
+        <sys_updated_on>2025-09-29 05:37:27</sys_updated_on>
+        <value>ac35c2dc83d0f210ead57596feaad379</value>
         <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2628,10 +2586,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>deefb1508314f210ead57596feaad303</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2025-09-29 05:37:27</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
         <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5^id=12ef71508314f210ead57596feaad3d5"/>
@@ -2770,173 +2728,7 @@ outputs.response = JSON.stringify(res);&#13;
     </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=12ef71508314f210ead57596feaad3d5"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=12ef71508314f210ead57596feaad3d5"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=12ef71508314f210ead57596feaad3d5^sys_idNOT IN12ef71508314f210ead57596feaad3e3,12ef71508314f210ead57596feaad3f3,9eef71508314f210ead57596feaad3de"/>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String,uiUniqueId=f401eca3-fd6a-48a6-a7e5-fbfb49daeabe</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>u_content-type</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Content-Type</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Validate incident exisits">12ef71508314f210ead57596feaad3d5</model>
-        <model_id>12ef71508314f210ead57596feaad3d5</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>12ef71508314f210ead57596feaad3e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String,uiUniqueId=0f15cfcb-55a9-4da1-8fdf-71ef52352d5d</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>u_accept</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Accept</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Validate incident exisits">12ef71508314f210ead57596feaad3d5</model>
-        <model_id>12ef71508314f210ead57596feaad3d5</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5</name>
-        <next_element/>
-        <order>3</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>12ef71508314f210ead57596feaad3f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=12ef71508314f210ead57596feaad3d5^sys_idNOT IN9eef71508314f210ead57596feaad3de"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3021,7 +2813,7 @@ outputs.response = JSON.stringify(res);&#13;
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=12ef71508314f210ead57596feaad3d5"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5^sys_idNOT IN12ef71508314f210ead57596feaad3e2,12ef71508314f210ead57596feaad3f2,5aef71508314f210ead57596feaad3f5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5^sys_idNOT IN12ef71508314f210ead57596feaad3e2"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
         <help/>
@@ -3034,52 +2826,6 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>12ef71508314f210ead57596feaad3e2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>u_content-type</element>
-        <help/>
-        <hint/>
-        <label>Content-Type</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>12ef71508314f210ead57596feaad3f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>u_accept</element>
-        <help/>
-        <hint/>
-        <label>Accept</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_12ef71508314f210ead57596feaad3d5</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>5aef71508314f210ead57596feaad3f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
@@ -3108,10 +2854,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:11</sys_created_on>
         <sys_id>22efb1508314f210ead57596feaad336</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=22efb1508314f210ead57596feaad336"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3220,10 +2966,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:11</sys_created_on>
         <sys_id>aeefb1508314f210ead57596feaad38a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
         <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3248,10 +2994,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:11</sys_created_on>
         <sys_id>eaefb1508314f210ead57596feaad38a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <value>6bb0038c8354b210ead57596feaad3e2</value>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
+        <value>ac35c2dc83d0f210ead57596feaad379</value>
         <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3428,90 +3174,7 @@ outputs.response = JSON.stringify(res);&#13;
     </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=22efb1508314f210ead57596feaad336"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=22efb1508314f210ead57596feaad336"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=22efb1508314f210ead57596feaad336^sys_idNOT IN2aefb1508314f210ead57596feaad360,6eefb1508314f210ead57596feaad358,eeefb1508314f210ead57596feaad35c"/>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String,uiUniqueId=8d1184a6-1f23-4fb6-a4fe-4adfd5924fe4</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>u_accept</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Accept</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Update incident">22efb1508314f210ead57596feaad336</model>
-        <model_id>22efb1508314f210ead57596feaad336</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336</name>
-        <next_element/>
-        <order>3</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>2aefb1508314f210ead57596feaad360</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=22efb1508314f210ead57596feaad336^sys_idNOT IN6eefb1508314f210ead57596feaad358"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3595,137 +3258,8 @@ outputs.response = JSON.stringify(res);&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=string,uiTypeLabel=String,uiUniqueId=2016ec9b-a2b7-4430-bcb9-822639c8ff26</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>u_content-type</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Content-Type</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Update incident">22efb1508314f210ead57596feaad336</model>
-        <model_id>22efb1508314f210ead57596feaad336</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>eeefb1508314f210ead57596feaad35c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=22efb1508314f210ead57596feaad336"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336^sys_idNOT IN2aefb1508314f210ead57596feaad35f,62efb1508314f210ead57596feaad363,eeefb1508314f210ead57596feaad35b"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>u_content-type</element>
-        <help/>
-        <hint/>
-        <label>Content-Type</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>2aefb1508314f210ead57596feaad35f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>u_accept</element>
-        <help/>
-        <hint/>
-        <label>Accept</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>62efb1508314f210ead57596feaad363</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_22efb1508314f210ead57596feaad336^sys_idNOT INeeefb1508314f210ead57596feaad35b"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
         <help/>
@@ -3766,10 +3300,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>52efb1508314f210ead57596feaad322</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:41</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=52efb1508314f210ead57596feaad322"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3780,13 +3314,17 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>66efb1508314f210ead57596feaad333</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:41</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-var incidentJson = new x_1319705_servicen.IncidentPayload();&#13;
+try{&#13;
+var incidentJson = new x_1319705_servicen.IncidentPayload2();&#13;
 var res = incidentJson.createIncidentPayload(inputs.incident_sysID)&#13;
 outputs.response = JSON.stringify(res);&#13;
+}catch(ex){&#13;
+    gs.log("Error while running script in ServiceNow Update incident Action" + ex.message);&#13;
+}&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -3807,18 +3345,6 @@ outputs.response = JSON.stringify(res);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=52efb1508314f210ead57596feaad322"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>52efb1508314f210ead57596feaad322</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>6eefb1508314f210ead57596feaad332</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>incident_sysID</field>
         <id>52efb1508314f210ead57596feaad322</id>
         <sys_created_by>admin</sys_created_by>
@@ -3834,11 +3360,11 @@ outputs.response = JSON.stringify(res);&#13;
         <field>script</field>
         <id>52efb1508314f210ead57596feaad322</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>22efb1508314f210ead57596feaad333</sys_id>
+        <sys_created_on>2025-09-29 05:37:28</sys_created_on>
+        <sys_id>8386495983103210ead57596feaad37e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -4047,7 +3573,7 @@ outputs.response = JSON.stringify(res);&#13;
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>Script step</label>
+        <label>set output status</label>
         <order>5</order>
         <outputs/>
         <section/>
@@ -4055,10 +3581,10 @@ outputs.response = JSON.stringify(res);&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:11</sys_created_on>
         <sys_id>a2efb1508314f210ead57596feaad390</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a2efb1508314f210ead57596feaad390"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4097,18 +3623,6 @@ if(inputs.statusCode == 200){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a2efb1508314f210ead57596feaad390"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a2efb1508314f210ead57596feaad390</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>2aefb1508314f210ead57596feaad3a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>responseBody</field>
         <id>a2efb1508314f210ead57596feaad390</id>
         <sys_created_by>admin</sys_created_by>
@@ -4119,18 +3633,6 @@ if(inputs.statusCode == 200){&#13;
         <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_a2efb1508314f210ead57596feaad390</table>
         <value>{{step[daf8f6ec-e903-4b61-8585-7ef16a0b67ec].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a2efb1508314f210ead57596feaad390</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:11</sys_created_on>
-        <sys_id>eaefb1508314f210ead57596feaad3a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>statusCode</field>
@@ -4188,7 +3690,7 @@ if(inputs.statusCode == 200){&#13;
         <label>responseBody</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">a2efb1508314f210ead57596feaad390</model>
+        <model display_value="set output status">a2efb1508314f210ead57596feaad390</model>
         <model_id>a2efb1508314f210ead57596feaad390</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a2efb1508314f210ead57596feaad390</name>
@@ -4271,7 +3773,7 @@ if(inputs.statusCode == 200){&#13;
         <label>statusCode</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">a2efb1508314f210ead57596feaad390</model>
+        <model display_value="set output status">a2efb1508314f210ead57596feaad390</model>
         <model_id>a2efb1508314f210ead57596feaad390</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a2efb1508314f210ead57596feaad390</name>
@@ -4355,7 +3857,7 @@ if(inputs.statusCode == 200){&#13;
         <label>status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">a2efb1508314f210ead57596feaad390</model>
+        <model display_value="set output status">a2efb1508314f210ead57596feaad390</model>
         <model_id>a2efb1508314f210ead57596feaad390</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_a2efb1508314f210ead57596feaad390</name>
@@ -4440,10 +3942,10 @@ if(inputs.statusCode == 200){&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>d2efb1508314f210ead57596feaad309</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d2efb1508314f210ead57596feaad309"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4454,15 +3956,17 @@ if(inputs.statusCode == 200){&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:10</sys_created_on>
         <sys_id>92efb1508314f210ead57596feaad31f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-&#13;
+try{&#13;
 var responseBody = JSON.parse(inputs.response);&#13;
 var result = responseBody.result[0];&#13;
 outputs.sysid = result.sys_id;&#13;
-&#13;
+}catch(ex){&#13;
+    gs.log("Error while running script in ServiceNow Update incident Action" + ex.message);&#13;
+}&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -4482,18 +3986,6 @@ outputs.sysid = result.sys_id;&#13;
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=d2efb1508314f210ead57596feaad309"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>d2efb1508314f210ead57596feaad309</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>9aefb1508314f210ead57596feaad31e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>code</field>
         <id>d2efb1508314f210ead57596feaad309</id>
@@ -4522,11 +4014,11 @@ outputs.sysid = result.sys_id;&#13;
         <field>script</field>
         <id>d2efb1508314f210ead57596feaad309</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-26 07:14:10</sys_created_on>
-        <sys_id>5eefb1508314f210ead57596feaad31e</sys_id>
+        <sys_created_on>2025-09-29 05:37:28</sys_created_on>
+        <sys_id>c786495983103210ead57596feaad370</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:10</sys_updated_on>
+        <sys_updated_on>2025-09-29 05:37:28</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -4960,14 +4452,14 @@ outputs.sysid = result.sys_id;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-26 07:14:11</sys_created_on>
         <sys_id>32efb1508314f210ead57596feaad3ae</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-26 07:14:11</sys_updated_on>
+        <sys_updated_on>2025-09-29 09:53:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

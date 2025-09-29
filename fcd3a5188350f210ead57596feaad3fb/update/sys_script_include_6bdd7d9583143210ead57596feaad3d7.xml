@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1319705_servicen.IncidentPayload2</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>IncidentPayload2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var IncidentPayload2 = Class.create();
+IncidentPayload2.prototype = {
+    initialize: function() {},
+
+    createIncidentPayload: function(incident_sys_id) {
+        // Read system property (comma-separated field names)
+        var fieldsProp = gs.getProperty('x_1319705_servicen.Incident.fields');
+        var fields = fieldsProp.split(',');
+
+        var incidentValues = {};
+		var incidentSysId = incident_sys_id;
+        var incidentRec = new GlideRecord('incident');
+        incidentRec.get(incidentSysId);
+
+        fields.forEach(function(field) {
+            var value = incidentRec.getDisplayValue(field);
+            if (value) {
+                if (field == 'number') {
+                    incidentValues.correlation_id = value;
+                } else {
+                    incidentValues[field] = value;
+                }
+            }
+        });
+
+        return incidentValues;
+    },
+
+
+    type: 'IncidentPayload2'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-29 09:43:41</sys_created_on>
+        <sys_id>6bdd7d9583143210ead57596feaad3d7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>IncidentPayload2</sys_name>
+        <sys_package display_value="ServiceNow Incident Spoke" source="x_1319705_servicen">fcd3a5188350f210ead57596feaad3fb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Incident Spoke">fcd3a5188350f210ead57596feaad3fb</sys_scope>
+        <sys_update_name>sys_script_include_6bdd7d9583143210ead57596feaad3d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-29 09:48:55</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6bdd7d9583143210ead57596feaad3d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-29 09:43:40</sys_created_on>
+        <sys_id>e1ee3dd983143210ead57596feaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-29 09:43:40</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
